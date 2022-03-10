@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailViewController" customModule="MyMovieMandiri" customModuleProvider="target">
+            <connections>
+                <outlet property="movieImageView" destination="40E-ph-a33" id="7RT-Cf-81f"/>
+                <outlet property="movieOverviewLabel" destination="o5e-XE-517" id="E93-Yr-s9y"/>
+                <outlet property="movieReleaseDateLabel" destination="KLV-dI-ONI" id="1cd-uP-VkW"/>
+                <outlet property="movieTableView" destination="BX1-dU-FAg" id="64v-vD-2Vz"/>
+                <outlet property="movieTrailerLabel" destination="Mep-es-A7V" id="muC-Vj-vSp"/>
+                <outlet property="movieWebView" destination="trx-a1-5ZT" id="mhZ-yp-U0B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uB-LG-Uvp">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O81-JG-u1S">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="723.66666666666663"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="40E-ph-a33">
+                                    <rect key="frame" x="8" y="8" width="398" height="163"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="163" id="Bpw-oQ-4Ca"/>
+                                        <constraint firstAttribute="width" constant="398" id="n6Q-8d-Frq"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5e-XE-517">
+                                    <rect key="frame" x="8" y="179" width="398" height="150.66666666666663"/>
+                                    <mutableString key="text">[Movie overview lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n [Movie overview lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n [Movie overview lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trailer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mep-es-A7V">
+                                    <rect key="frame" x="8" y="362.66666666666669" width="398" height="21"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trx-a1-5ZT">
+                                    <rect key="frame" x="8" y="391.66666666666669" width="398" height="172.00000000000006"/>
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="172" id="yb6-i5-bp5"/>
+                                    </constraints>
+                                    <wkWebViewConfiguration key="configuration">
+                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                        <wkPreferences key="preferences"/>
+                                    </wkWebViewConfiguration>
+                                </wkWebView>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BX1-dU-FAg">
+                                    <rect key="frame" x="8" y="571.66666666666663" width="398" height="144"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="144" id="YE8-Cw-Ujq"/>
+                                    </constraints>
+                                </tableView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Movie release date]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLV-dI-ONI">
+                                    <rect key="frame" x="8" y="337.66666666666669" width="398" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Mep-es-A7V" firstAttribute="leading" secondItem="O81-JG-u1S" secondAttribute="leading" constant="8" id="5eI-gD-cIf"/>
+                                <constraint firstAttribute="trailing" secondItem="40E-ph-a33" secondAttribute="trailing" constant="8" id="6cX-8u-8gy"/>
+                                <constraint firstItem="o5e-XE-517" firstAttribute="leading" secondItem="O81-JG-u1S" secondAttribute="leading" constant="8" id="IHC-Ky-EyK"/>
+                                <constraint firstItem="Mep-es-A7V" firstAttribute="top" secondItem="KLV-dI-ONI" secondAttribute="bottom" constant="8" id="IVy-I2-g6M"/>
+                                <constraint firstItem="40E-ph-a33" firstAttribute="leading" secondItem="O81-JG-u1S" secondAttribute="leading" constant="8" id="Is9-9V-CW4"/>
+                                <constraint firstItem="o5e-XE-517" firstAttribute="top" secondItem="40E-ph-a33" secondAttribute="bottom" constant="8" id="Lci-Ie-6Bv"/>
+                                <constraint firstAttribute="trailing" secondItem="Mep-es-A7V" secondAttribute="trailing" constant="8" id="NfY-Km-6JL"/>
+                                <constraint firstAttribute="trailing" secondItem="o5e-XE-517" secondAttribute="trailing" constant="8" id="SlT-Xk-UUW"/>
+                                <constraint firstItem="40E-ph-a33" firstAttribute="top" secondItem="O81-JG-u1S" secondAttribute="top" constant="8" id="W82-Up-gPN"/>
+                                <constraint firstAttribute="bottom" secondItem="BX1-dU-FAg" secondAttribute="bottom" constant="8" id="YbC-M5-e3z"/>
+                                <constraint firstItem="BX1-dU-FAg" firstAttribute="top" secondItem="trx-a1-5ZT" secondAttribute="bottom" constant="8" id="Z6F-Nl-SqQ"/>
+                                <constraint firstItem="BX1-dU-FAg" firstAttribute="leading" secondItem="O81-JG-u1S" secondAttribute="leading" constant="8" id="cdj-vc-mB3"/>
+                                <constraint firstItem="o5e-XE-517" firstAttribute="top" secondItem="40E-ph-a33" secondAttribute="bottom" constant="8" id="eih-2r-pOP"/>
+                                <constraint firstAttribute="trailing" secondItem="o5e-XE-517" secondAttribute="trailing" constant="8" id="fBd-8R-QUv"/>
+                                <constraint firstItem="KLV-dI-ONI" firstAttribute="top" secondItem="o5e-XE-517" secondAttribute="bottom" constant="8" id="gTu-2t-4w4"/>
+                                <constraint firstAttribute="trailing" secondItem="trx-a1-5ZT" secondAttribute="trailing" constant="8" id="gmu-Pg-y6U"/>
+                                <constraint firstItem="o5e-XE-517" firstAttribute="leading" secondItem="O81-JG-u1S" secondAttribute="leading" constant="8" id="hcE-ng-7xY"/>
+                                <constraint firstAttribute="trailing" secondItem="BX1-dU-FAg" secondAttribute="trailing" constant="8" id="i3o-BB-IrS"/>
+                                <constraint firstItem="trx-a1-5ZT" firstAttribute="top" secondItem="Mep-es-A7V" secondAttribute="bottom" constant="8" id="kwA-PN-ugg"/>
+                                <constraint firstItem="trx-a1-5ZT" firstAttribute="leading" secondItem="O81-JG-u1S" secondAttribute="leading" constant="8" id="oJQ-6K-R9Q"/>
+                                <constraint firstItem="KLV-dI-ONI" firstAttribute="leading" secondItem="O81-JG-u1S" secondAttribute="leading" constant="8" id="p25-FQ-k10"/>
+                                <constraint firstAttribute="trailing" secondItem="KLV-dI-ONI" secondAttribute="trailing" constant="8" id="xdj-5q-EkD"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="O81-JG-u1S" firstAttribute="width" secondItem="7uB-LG-Uvp" secondAttribute="width" id="4Q1-52-rtl"/>
+                        <constraint firstAttribute="trailing" secondItem="O81-JG-u1S" secondAttribute="trailing" id="Kwc-RB-Wiy"/>
+                        <constraint firstItem="O81-JG-u1S" firstAttribute="top" secondItem="7uB-LG-Uvp" secondAttribute="top" id="L00-FT-9gQ"/>
+                        <constraint firstItem="O81-JG-u1S" firstAttribute="leading" secondItem="7uB-LG-Uvp" secondAttribute="leading" id="OPs-rD-TsF"/>
+                        <constraint firstAttribute="bottom" secondItem="O81-JG-u1S" secondAttribute="bottom" id="rjP-yl-45I"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7uB-LG-Uvp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Wqx-Pb-pjv"/>
+                <constraint firstAttribute="bottom" secondItem="7uB-LG-Uvp" secondAttribute="bottom" id="buK-zO-QbK"/>
+                <constraint firstAttribute="trailing" secondItem="7uB-LG-Uvp" secondAttribute="trailing" id="k24-Mp-IrI"/>
+                <constraint firstItem="7uB-LG-Uvp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sd2-ND-yce"/>
+            </constraints>
+            <point key="canvasLocation" x="-146.37681159420291" y="-21.195652173913047"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
